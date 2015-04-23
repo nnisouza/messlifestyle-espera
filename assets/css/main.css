@@ -1,9 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,700);
 html,
 button,
 input,
 select,
 textarea {
-    color: #343434;
+    color: #231f20;
+    font-family: 'Roboto Slab';
 }
 
 html {
@@ -13,7 +15,9 @@ html {
 html,
 body{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 ::-moz-selection {
@@ -67,10 +71,51 @@ textarea {
    ========================================================================== */
 
 
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg.jpg') no-repeat center top;
+    background-size: cover;
+    min-height: 460px;
+}
 
+.container{
+    width: 730px;
+    margin: 0 auto;
+}
+#logo{
+    background: url('../img/logo.png') no-repeat right bottom;
+    margin: 0;
+    padding: 0;
+    width: 318px;
+    height: 114px;
+    padding: 100px 0 0 46px;
+}
+h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+span{
+    font-weight: 700;
+}
 
-
-
+h2{
+    font-size: 45px;
+    padding-left: 45px;
+}
+h3{
+    font-size: 28px;
+    padding-top: 60px;
+    padding-left: 15px;
+}
+p.mail{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 15px;
+    margin: 0;
+    text-transform: uppercase;
+}
 
 
 
@@ -84,8 +129,11 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (max-width: 1800px) {
+    .wrapper{
+        background-size: auto;
+        min-width: 730px;
+    }
 }
 
 @media print,

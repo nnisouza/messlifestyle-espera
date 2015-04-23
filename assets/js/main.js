@@ -16,7 +16,6 @@ function actions() {
     });
 }
 function afterLoaded() {
-    alert('Go!');
 }
 
 
